@@ -31,9 +31,7 @@ def remove_invalid_filepath_characters(text):
     
     return text
 def remove_unsupported_characters(text):
-        # Implement the logic to remove unsupported characters from the text
-        
-        return text.encode('latin-1', 'ignore').decode('latin-1')
+    return text.encode('latin-1', 'ignore').decode('latin-1')
 def main():
     # Outlook Section
     Outlook = win32com.client.Dispatch("Outlook.Application")
